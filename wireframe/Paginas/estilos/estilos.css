@@ -1,3 +1,39 @@
 .ayuda{
     color: green;
 }
+
+body{
+    margin: 0;
+}
+.titulopregunta_ayuda{
+    color: white;
+    background: rgb(12, 68, 100);
+    text-align: center;
+  
+}
+.iniciomedio_ayuda{
+
+    color: white;
+    background: rgb(12, 68, 100);
+  
+}
+.mediopregunta_ayuda{
+    text-align: center;
+    color: white;
+    background: rgb(12, 68, 100);
+  
+}
+
+.pregunta_ayuda  {
+    color: wheat;
+    border: 1px solid black;
+    background: rgb(23, 11, 77);
+   
+
+}
+p{
+    color: black;
+    border: 1px solid black;
+    background: rgb(23, 11, 77);
+   
+}
