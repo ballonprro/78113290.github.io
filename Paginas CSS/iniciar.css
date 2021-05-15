@@ -1,4 +1,8 @@
 body{
-    background-image: url(/Imagenes/fondo.jpeg);
-    margin: 0%
+    background-image: url(/Imagenes/fondo-web-5.jpg);
+}
+.link1{
+    background-color: #126e82;
+    border-color:solid black;
+
 }
