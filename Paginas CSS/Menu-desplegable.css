@@ -50,7 +50,7 @@ nav ul li{
 }
 nav ul li a{
     display: block;
-    padding: 0rem 2rem;
+    padding: 0 2rem;
     line-height: 5rem;
     color: #d8e3e7;
     text-decoration: none;
@@ -59,7 +59,7 @@ nav ul li ul{
     display: none;
     position: absolute;
     background-color: #132c33;
-    /*border: 0.5px solid #132c33;*/
+    border: 1px solid #132c33;
 }
 nav ul li:hover ul {
     display: block;
