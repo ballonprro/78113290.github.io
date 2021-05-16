@@ -85,3 +85,51 @@ footer {
     width: 100%;
     height: 55px;
 }
+
+/*Cuadrados desplegables*/
+div{
+    width: 100px;
+    height: 100px;
+}
+.cajon1 {
+    position: relative;
+    top: 340px ;
+    bottom: ;
+    right: ;
+    left: 58px;
+}
+.cajon2{
+    position: relative;
+    top: ;
+    bottom: 70px;
+    right: ;
+    left: 740px;
+}
+.cajon3{
+    position: relative;
+    top: 140px ;
+    bottom: ;
+    right: ;
+    left: 770px;
+}
+.cajon4{
+    position: relative;
+    top: ;
+    bottom: 270px;
+    right: 0px;
+    left: 1275px;
+}
+.cajon5{
+    position: relative;
+    top: ;
+    bottom: 370px;
+    right: 0px;
+    left: 1590px;
+}
+.cajon6{
+    position: relative;
+    top: ;
+    bottom: 250px;
+    right: 0px;
+    left: 1480px;   
+}
