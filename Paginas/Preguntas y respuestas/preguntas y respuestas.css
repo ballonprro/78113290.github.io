@@ -1,0 +1,26 @@
+div> ol{
+    color: antiquewhite;
+    background: rgb(4, 53, 68);
+    width: 1200px
+}
+.question_title_help{
+    color: black;
+    background: antiquewhite;
+    width: 550px;
+}
+.center_question_help{
+    color: black;
+    background: antiquewhite;
+    width: 550px;
+}
+.div_end{
+    color: antiquewhite;
+    background-color: rgb(4, 53, 68);
+}
+a{
+    color:rgb(25, 156, 196) ;
+}
+img{
+display: flex;
+
+}

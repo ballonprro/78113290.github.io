@@ -1,0 +1,85 @@
+/* p{
+    text-align: center;
+} */
+.information_contacto{
+    text-align: center;
+   
+    
+}  
+
+div, h3, td{
+    color: ivory;
+}
+#header{
+    margin: auto;
+    width: 400px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+ul, ol{
+    list-style: none;
+}
+.nav li a{
+    background-color: #fff;
+    color: #000 ;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+
+}
+.nav li a:hover{
+    background-color: #434343;
+}
+.nav > li{
+    float: left;
+}  
+.nav li ul{
+    display:none ;
+    position: absolute;
+    min-width: 140px;
+
+}
+.nav li:hover > ul{
+    display: block;
+}
+.div_end{
+    background-color: rgb(4, 53, 68);
+
+}
+img{
+    margin: 10px 0px 0px 1200px; 
+}
+ /* div tr> td{
+    margin: 10px 0px 0px 1200px;
+} */
+
+.idiomas_pre{
+    color: #fff ;
+}
+table tr> th{
+    color: #fff;
+    text-align: center;
+    margin: 10px 0px 0px 100px;
+}
+h3{
+    color: #fff;
+}
+table tr> td{
+    text-align: end;
+}
+.change_password{
+    background-color: rgb(4, 53, 68);
+    text-align: center;
+   width: 800px;
+   margin: 10px 0px 0px 200px;
+   
+  
+}
+div> p{
+    text-align: center;
+}
+.configuracion_cuenta{
+    background-color: rgb(4, 53, 68);
+    text-align: center;
+   width: 800px;
+   margin: 10px 0px 0px 200px;
+}
