@@ -4,7 +4,7 @@
 }
 body{
     background:url(/Imagenes/fondo-web-5.jpg);
-    background-attachment: ;
+    background-attachment: local ;
 }
 .fuente1 {
     font-family: 'Orbitron', sans-serif;
@@ -147,5 +147,4 @@ div{
     position: relative;
     left: 100px;
     top: 100px;
-
 }
