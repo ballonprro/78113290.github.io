@@ -132,3 +132,12 @@ div{
     right: 0px;
     left: 1480px;   
 }
+.bienvenido
+{
+    border:solid white 1px;
+    width: 550px;
+    background-color: rgb(0, 59, 59);
+    opacity: 90%;
+    text-align: left;
+    font-size: 25px; 
+}
