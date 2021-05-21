@@ -4,7 +4,7 @@
 }
 body{
     background:url(/Imagenes/fondo-web-5.jpg);
-    background-repeat: no-repeat;
+    background-attachment: ;
 }
 .fuente1 {
     font-family: 'Orbitron', sans-serif;
@@ -135,9 +135,17 @@ div{
 .bienvenido
 {
     border:solid white 1px;
+    color: #d8e3e7;
     width: 550px;
-    background-color: rgb(0, 59, 59);
+    background-color:#132c33;
     opacity: 90%;
     text-align: left;
-    font-size: 25px; 
+    font-size: 25px;
+    text-decoration: none; 
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    left: 100px;
+    top: 100px;
+
 }
