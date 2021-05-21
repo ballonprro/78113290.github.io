@@ -83,3 +83,6 @@ div> p{
    width: 800px;
    margin: 10px 0px 0px 200px;
 }
+p{
+    text-align: center;
+}
