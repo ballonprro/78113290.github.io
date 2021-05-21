@@ -16,3 +16,146 @@ h1{
 b{
     color:khaki
 }
+.uno{
+    text-decoration: none;
+    display: block;
+    border:solid grey;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    background-color: rgba(3, 58, 49, 0.288);
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+}
+.dos{
+    text-decoration: none;
+    display: block;
+    border:solid grey;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    background-color: rgba(3, 58, 49, 0.288);
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    bottom: 56px;
+    right: 0px;
+    left: 209px;
+}
+.tres{
+    text-decoration: none;
+    display: block;
+    border:solid grey;
+    width: 200px;
+    height: 39px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    background-color: rgba(3, 58, 49, 0.288);
+    font-family: 'Orbitron', sans-serif;
+    position:relative;
+    bottom: 112px;
+    right: 0px;
+    left: 418px;
+}
+.concepto{
+    border:solid white;
+    width: 550px;
+    background-color: rgb(0, 59, 59);
+    text-align: left;
+    font-size: 25px;
+}
+.dota{
+    position: relative;
+    bottom: 950px;
+    right: 200px;
+    left: 700px;
+    border:solid teal;
+}
+.counter{
+    position: relative;
+    bottom: 780px;
+    right: 200px;
+    left: 700px;
+    border:solid teal;
+}
+.lol{
+    position: relative;
+    bottom: 600px;
+    right: 200px;
+    left: 700px;
+    border:solid teal;
+}
+.juegos{
+    display: block;
+    border:solid grey;
+    width: 500px;
+    height: 85px;
+    text-align: center;
+    padding-top: 55px;
+    color: rgb(12, 194, 82);
+    background-color: rgba(6, 65, 32, 0.288);
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    bottom: 220px;
+    right: 0px;
+    left: 1290px;
+}
+.juego1{
+    text-decoration: none;
+    display: block;
+    border:solid grey;
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    padding-top: 17px;
+    color: white;
+    background-color: rgba(3, 58, 49, 0.288);
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    bottom: 100px;
+    right: 0px;
+    left: 1150px;
+}
+.juego2{
+    text-decoration: none;
+    display: block;
+    border:solid grey;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    background-color: rgba(3, 58, 49, 0.288);
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    bottom: 160px;
+    right: 10px;
+    left: 1390px;
+}
+.juego3{
+    text-decoration: none;
+    display: block;
+    border:solid grey;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    background-color: rgba(3, 58, 49, 0.288);
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    bottom: 213px;
+    right: 5px;
+    left: 1620px;
+}
+.LOGO{
+    position: relative;
+    bottom: 1280px;
+    right: 0px;
+    left: 1260px;
+    border:solid teal;
+}

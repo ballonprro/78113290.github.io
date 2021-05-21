@@ -1,26 +1,64 @@
-div> ol{
-    color: antiquewhite;
-    background: rgb(4, 53, 68);
-    width: 1200px
-}
-.question_title_help{
+div{
+    display: block;
+    margin: 0;
+   width: 500px;
+    height: 80%;
     color: black;
+}
+h3{
+    /* background: antiquewhite; */
+    width: 600px;
+}
+.intrucciones{
+    display: block;
+    background:  rgb(28, 128, 146);
+    width: 1200px;
+    color: whitesmoke;
+}
+.cambiar_contraseña{
+    display: block;
+    background:  rgb(28, 128, 146);
+    width: 1200px;
+    color: whitesmoke;
+}
+.envianos_correo{
+    display: block;
+    background:  rgb(28, 128, 146);
+    width: 1200px;
+    color: whitesmoke;
+}
+/* .question_title_help{
+
+   margin: 0;
+   padding: 0;
+
+    
+} */
+.cuenta_robada{
     background: antiquewhite;
-    width: 550px;
-}
-.center_question_help{
-    color: black;
-    background: antiquewhite;
-    width: 550px;
-}
-.div_end{
-    color: antiquewhite;
-    background-color: rgb(4, 53, 68);
-}
-a{
-    color:rgb(25, 156, 196) ;
-}
-img{
-display: flex;
 
 }
+.center_question_help{
+    background: antiquewhite;
+
+}
+
+/* .cuenta_personal{
+    margin: 0;
+} */
+.mario{
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+/* .super{
+    margin: 0;
+    padding: 0;
+    float: left;
+} */
+    
+
+
+
+
+
