@@ -1,0 +1,38 @@
+body{
+    font-family: Arial;
+    background-attachment: fixed;
+}
+h3{
+    display: block;
+    background-color: #126e82;
+    border: 3px solid#132c33;
+    text-align: center;
+    
+}
+p{
+    display: block;
+    background-color:#126e82;
+    border:3px solid#132c33;
+    padding: 30px;
+    width: 150px;
+    height: 100px;
+    margin: 100px 100px 200px 350px;
+}
+#a{
+    margin: -990px 100px 200px 350px;
+}
+
+.noticia{
+    display: block;
+    background-color:#126e82;
+    border:3px solid#132c33;
+    padding: 20px;
+    width: 550px;
+    height: 100px;
+    margin: -900px 100px 2000px 700px;
+}
+.noticia2{
+    width: 550px;
+    height: 100px;
+    margin-left: 700px ;
+}
