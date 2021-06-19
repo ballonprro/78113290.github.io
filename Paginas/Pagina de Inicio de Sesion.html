@@ -33,7 +33,7 @@
     <img class="banner" src="/Imagenes/Valorat.jpg" alt="a"> <br>
     <section class="formulario1">
         <p>Iniciar Sesion</p>
-        <input class="casilla" type="email"  placeholder="Correo"><br><br>
+        <input class="casilla" type="email"  placeholder="Apodo"><br><br>
         <input class="casilla" type="password" placeholder="Contraseña"><br><br>
         <a href="../index.html"><input class="casilla" type="button" value="Iniciar Sesion"></a>
 
@@ -45,5 +45,16 @@
         <h3 class="contacto1">Contacto e-sports@certus.edu.pe</h3>
         <h3 class="contacto1">© 2021 78113290.github.io. Todos los Derechos Reservados.</h3>
     </footer>
+
+    <script>
+        var pregunta = prompt("¿Estas registrado?"); 
+
+        while(!isNaN(pregunta) )
+        {
+            alert("Primero deves de registrarte")
+            pregunta = prompt("¿Estas registrado?");
+        }
+        alert("Puedes iniciar sesion")
+    </script>
 </body>
 </html>
