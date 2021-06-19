@@ -11,6 +11,7 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap" rel="stylesheet">
+    <title>Configuracion de cuenta</title>
 </head>
 <body>
     <header class="fuente1">
@@ -64,16 +65,17 @@
         <table style="width: 50%;">
             <tr>
                 <td>actual</td>
-                <td><textarea name="contraseña" cols="8" rows="1"></textarea></td>
+                <td><textarea  name="contraseña" cols="8" rows="1" id="textarea1" onclick="ingresa_texto();"></textarea></td>
+                
                 
             </tr>
             <tr>
                 <td>nueva</td>
-                <td><textarea name="contraseña" cols="8" rows="1"></textarea></td>
+                <td><textarea name="contraseña" cols="8" rows="1" id="textarea2" onclick="ingresa_texto();"></textarea></td>
             </tr>
             <tr>
                 <td>vuelve a escribir la contraseña </td>
-                <td><textarea name="contraseña" cols="8" rows="1"></textarea></td>
+                <td><textarea name="contraseña" cols="8" rows="1" id="textarea3" onclick="ingresa_texto();"></textarea></td>
             </tr>
             
             
@@ -116,5 +118,39 @@
         <h3 class="contacto1">Contacto e-sports@certus.edu.pe</h3>
         <h3 class="contacto1">© 2021 78113290.github.io. Todos los Derechos Reservados.</h3>
     </footer>
+    <script>
+        function ingresa_texto(texto)
+        {
+           var actualPass = document.getElementById("textarea1").value;
+           var introPass = prompt("introduce actual contraseña").value;
+
+
+
+           var nuevaPass = document.getElementById("textarea2");
+           var introNueva = prompt("nueva contraseña");
+
+           
+
+           var vuelvePass = document.getElementById("textarea3").value;
+           var escribeNew = prompt("vuelve a escribir la contraseña").value; 
+        
+           if(actualPass == introPass && nuevaPass == introNueva && vuelvePass == escribeNew)
+           {
+             alert("correcto");
+
+           }
+           else
+           {
+             alert("el usuario y la contraseña no son validos");
+           }
+        
+        }
+
+        
+        
+
+        
+        
+    </script>
 </body>
 </html>
