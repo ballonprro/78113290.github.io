@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap" rel="stylesheet">
+    <link href="../paginasJS/iniciar.js">
 </head>
 <body>
     <header class="fuente1">
@@ -45,13 +46,7 @@
     <input class="casilla" type="password" placeholder="Repita la Contraseña" maxlength="10"> <br><br>
     <input class="casill" type="checkbox" name="id">Acepto terminos y condiciones <br> 
     <a href="../index.html"><input class="casilla" type="button" value="Registrarse"></a>
-</section>
-
-
-
-
-
-
+</section> 
 
     <footer class="fuente2">
         <a href="#" class="colorfooter">Juegos</a>
@@ -60,5 +55,15 @@
         <h3 class="contacto1">Contacto e-sports@certus.edu.pe</h3>
         <h3 class="contacto1">© 2021 78113290.github.io. Todos los Derechos Reservados.</h3>
     </footer>
+
+    <script>
+        var edad = prompt("Ingresa tu edad: "); 
+    
+    while ( edad<9 || isNaN(edad) )
+    {
+        edad = prompt("Introduce edad (Debes ser mayor de 9 años)");
+    }
+    alert("Puedes registrarte")
+</script>
 </body>
 </html>
