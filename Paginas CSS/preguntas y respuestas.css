@@ -10,18 +10,21 @@ h3{
     width: 600px;
 }
 .intrucciones{
+    border: 1px solid rgb(8, 37, 46);
     display: block;
     background:  rgb(28, 128, 146);
     width: 1200px;
     color: whitesmoke;
 }
 .cambiar_contraseña{
+    border: 2px solid rgb(3, 16, 19);
     display: block;
     background:  rgb(28, 128, 146);
     width: 1200px;
     color: whitesmoke;
 }
 .envianos_correo{
+    border: 2px solid black;
     display: block;
     background:  rgb(28, 128, 146);
     width: 1200px;
@@ -57,6 +60,34 @@ h3{
     float: left;
 } */
     
+.container1{
+    margin: 50px; 
+    padding: 20px;
+
+    
+}
+.container2{
+    margin: 50px; 
+    padding: 20px;
+}
+.container3{
+    margin: 50px; 
+    padding: 20px;
+}
+.ingresatupregunta{
+    margin: 50px; 
+    padding: 20px;
+}
+.agrega-ya{
+    border: 1px solid rgb(224, 214, 214);
+    background: rgb(225, 226, 226);
+    width: 40%;
+    font-size: 150%;
+}
+.enviarcomentario{
+    width: 40%;
+}
+
 
 
 
