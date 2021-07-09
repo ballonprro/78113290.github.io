@@ -1,21 +1,7 @@
 body{
     background-image: url(/Imagenes/fondo-web-5.jpg);
 }
-h2{
-    color:greenyellow
-}
-li{
-    color:beige
-}
-a{
-    color:khaki
-}
-h1{
-    color:lightblue
-}
-b{
-    color:khaki
-}
+
 .uno{
     text-decoration: none;
     display: block;
@@ -28,66 +14,6 @@ b{
     background-color: rgba(3, 58, 49, 0.288);
     font-family: 'Orbitron', sans-serif;
     position: relative;
-}
-.dos{
-    text-decoration: none;
-    display: block;
-    border:solid grey;
-    width: 200px;
-    height: 35px;
-    text-align: center;
-    padding-top: 15px;
-    color: white;
-    background-color: rgba(3, 58, 49, 0.288);
-    font-family: 'Orbitron', sans-serif;
-    position: relative;
-    bottom: 56px;
-    right: 0px;
-    left: 209px;
-}
-.tres{
-    text-decoration: none;
-    display: block;
-    border:solid grey;
-    width: 200px;
-    height: 39px;
-    text-align: center;
-    padding-top: 10px;
-    color: white;
-    background-color: rgba(3, 58, 49, 0.288);
-    font-family: 'Orbitron', sans-serif;
-    position:relative;
-    bottom: 112px;
-    right: 0px;
-    left: 418px;
-}
-.concepto{
-    border:solid white;
-    width: 550px;
-    background-color: rgb(0, 59, 59);
-    text-align: left;
-    font-size: 25px;
-}
-.dota{
-    position: relative;
-    bottom: 950px;
-    right: 200px;
-    left: 700px;
-    border:solid teal;
-}
-.counter{
-    position: relative;
-    bottom: 780px;
-    right: 200px;
-    left: 700px;
-    border:solid teal;
-}
-.lol{
-    position: relative;
-    bottom: 600px;
-    right: 200px;
-    left: 700px;
-    border:solid teal;
 }
 .juegos{
     display: block;
@@ -158,4 +84,89 @@ b{
     right: 0px;
     left: 1260px;
     border:solid teal;
+}
+/*_____________Contenido Principal___________*/
+#principal{
+    width:80%;
+    height: auto; overflow: hidden;
+    border: 1px solid;
+    margin: 10px auto;
+}
+#publicaciones{
+    width: 50%;
+    height: auto; overflow: hidden;
+    border: 1px solid red;
+    margin-top: 10px ;
+}
+.post{
+    width: 96%;
+    height: auto; overflow: hidden;
+    padding: 7px;
+    background: #fdfdfd;
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: red;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #ccc;
+    margin-bottom: 25px;
+}
+.enlace-post{
+    text-decoration: none;
+
+}
+#publicaciones a .titulo-post{
+color: #6e6e6e;
+font-size: 22px;
+font-family: 'calibri light';
+
+}
+#publicaciones a .titulo-post:hover{
+    text-decoration: underline;
+}
+#publicaciones .img-post{
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin: 7px 7px 7px 0px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#publicaciones .datos-publicaciones{
+    font-family:'calibri light';
+    color: crimson;
+}
+#publicaciones .parrafo-post{
+    font-family:'calibri light';
+    font-size: 16px;
+    color: #848484;
+    padding: 5px;
+}
+#publicaciones .leer-mas{
+    background: red;
+    color: white;
+    border: 0px;
+    padding: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+#publicaciones .leer-mas:hover{
+    background: rgb(82, 10, 10);
+    color:white;
+}
+#publicaciones .num-comentarios{
+    background: #0b3b39;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+}
+#publicaciones .enlace-paginacion{
+    text-decoration: none;
+    color: yellow;
+}
+#publicaciones .enlace-paginacion:hover{
+    text-decoration: underline;
 }
