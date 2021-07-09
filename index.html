@@ -15,7 +15,7 @@
 <body>
     <header class="fuente1">
         <nav>
-            <a href="/Paginas/Pagina Iniciar.html" class="iniciarsesion"><span>Iniciar Sesion</span> <i class="icon ion-md-person"></i></a>
+            <a id="login" href="/Paginas/Pagina Iniciar.html" class="iniciarsesion"><span>Iniciar Sesion</span> <i class="icon ion-md-person"></i></a>
             <a href="/Paginas/Preguntas y respuestas/configuracion de cuenta.html" class="configuracion">configuracion </a>
             
             <img class="logoec" src="/Imagenes/ESPORTSCERTUS.png" alt="Logo-esportscertus">
@@ -56,6 +56,40 @@
         <h3 class="contacto1">Contacto e-sports@certus.edu.pe</h3>
         <h3 class="contacto1">© 2021 78113290.github.io. Todos los Derechos Reservados.</h3>
     </footer>
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDHIZjHE1Ta91S9y0KE8UlK0dAuYi0HnVo",
+    authDomain: "e-sports-certus.firebaseapp.com",
+    projectId: "e-sports-certus",
+    storageBucket: "e-sports-certus.appspot.com",
+    messagingSenderId: "167675707661",
+    appId: "1:167675707661:web:850b6a438bcd4d5f85b044"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    
+<script>
+          firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    var uid = user.uid;
+    document.getElementById("login").innerHTML = "Hola" + user.email;
+  } 
+  else {
+    document.getElementById("login").innerHTML = "No logueado" + user.email;
+  }
+});
+</script>
     <!-- <script> -->
         <!-- window.alert("Bienvenido Gamer"); -->
         <!-- window.prompt("Pon tu nombre") -->

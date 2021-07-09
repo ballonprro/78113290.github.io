@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap" rel="stylesheet">
+    <script src="../paginasJS/Autenticar.js"></script>
 </head>
 <body>
     <header class="fuente1">
@@ -33,9 +34,9 @@
     <img class="banner" src="/Imagenes/Valorat.jpg" alt="a"> <br>
     <section class="formulario1">
         <p>Iniciar Sesion</p>
-        <input class="casilla" type="email"  placeholder="Apodo"><br><br>
-        <input class="casilla" type="password" placeholder="Contraseña"><br><br>
-        <a href="../index.html"><input class="casilla" type="button" value="Iniciar Sesion"></a>
+        <input id="emailAcc" class="casilla" type="email"  placeholder="Apodo"><br><br>
+        <input id="passwordAcc" class="casilla" type="password" placeholder="Contraseña"><br><br>
+        <button class="casilla" onclick="iniciar();">iniciarsesion</button>
 
     </section>
     <footer class="fuente2">
@@ -45,6 +46,28 @@
         <h3 class="contacto1">Contacto e-sports@certus.edu.pe</h3>
         <h3 class="contacto1">© 2021 78113290.github.io. Todos los Derechos Reservados.</h3>
     </footer>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDHIZjHE1Ta91S9y0KE8UlK0dAuYi0HnVo",
+    authDomain: "e-sports-certus.firebaseapp.com",
+    projectId: "e-sports-certus",
+    storageBucket: "e-sports-certus.appspot.com",
+    messagingSenderId: "167675707661",
+    appId: "1:167675707661:web:850b6a438bcd4d5f85b044"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
 
     <script>
         var pregunta = prompt("¿Estas registrado?"); 

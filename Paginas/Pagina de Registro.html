@@ -10,11 +10,14 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap" rel="stylesheet">
     <link href="../paginasJS/iniciar.js">
+    <script src="../paginasJS/Autenticar.js"></script>
 </head>
 <body>
+
+
     <header class="fuente1">
         <nav>
-            <a href="#" class="iniciarsesion"><span>Iniciar Sesion</span> <i class="icon ion-md-person"></i></a>
+            <a id="login" class="iniciarsesion"><span>Iniciar Sesion</span> <i class="icon ion-md-person"></i></a>
             <img class="logoec" src="/Imagenes/ESPORTSCERTUS.png" alt="Logo-esportscertus">
             <ul>
                 <li><a href="/index.html">INICIO</a></li>
@@ -40,12 +43,11 @@
 <section class="formulario2">
     <input class="casilla" type="text" placeholder="Nombres" maxlength="20" name="Nombres" id="Apellidos">
     <input class="casilla" type="text" placeholder="Apellidos" maxlength="20" name="Apellidos" id="Apellidos"> <br> <br>
-    <input class="casilla" type="text" placeholder="Apodo" maxlength="10" name="Apodo" id="Apodo"> <br> <br>
-    <input class="casilla" type="email"  placeholder="Correo"> <br><br>
-    <input class="casilla" type="password" placeholder="Contraseña" maxlength="10"> <br><br>
+    <input id="email" class="casilla" type="email"  placeholder="Correo"> <br><br>
+    <input id="password" class="casilla" type="password" placeholder="Contraseña" maxlength="10"> <br><br>
     <input class="casilla" type="password" placeholder="Repita la Contraseña" maxlength="10"> <br><br>
     <input class="casill" type="checkbox" name="id">Acepto terminos y condiciones <br> 
-    <a href="../index.html"><input class="casilla" type="button" value="Registrarse"></a>
+    <button class="casilla" onclick="enviar();">Registrarse</button>
 </section> 
 
     <footer class="fuente2">
@@ -56,7 +58,44 @@
         <h3 class="contacto1">© 2021 78113290.github.io. Todos los Derechos Reservados.</h3>
     </footer>
 
-    <script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDHIZjHE1Ta91S9y0KE8UlK0dAuYi0HnVo",
+    authDomain: "e-sports-certus.firebaseapp.com",
+    projectId: "e-sports-certus",
+    storageBucket: "e-sports-certus.appspot.com",
+    messagingSenderId: "167675707661",
+    appId: "1:167675707661:web:850b6a438bcd4d5f85b044"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+</script>
+
+
+<script>
+
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    var uid = user.uid;
+    document.getElementById("login").innerHTML = "Hola" + user.email;
+  } 
+  else {
+    document.getElementById("login").innerHTML = "No logueado" + user.email;
+  }
+});
+
+</script>
+
+<script>
         var edad = prompt("Ingresa tu edad: "); 
     
     while ( edad<9 || isNaN(edad) )
