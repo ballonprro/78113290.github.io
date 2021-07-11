@@ -21,8 +21,7 @@
         <nav>
             <a href="/Paginas/Pagina Iniciar.html" class="iniciarsesion"><span>Iniciar Sesion</span> <i
                     class="icon ion-md-person"></i></a>
-            <a href="/Paginas/Preguntas y respuestas/configuracion de cuenta.html" class="configuracion">configuracion
-            </a>
+        
             <img class="logoec" src="/Imagenes/ESPORTSCERTUS.png" alt="Logo-esportscertus">
             <ul>
                 <li><a href="/index.html">INICIO</a></li>
@@ -99,20 +98,25 @@
             programador y podra llamar, enviar un correo.
         </div>
     </div>
+    <div id="repuestaAleatoria" class="imprime-html"></div>
+    
+    <form id="agregandopreg">
+        <div class="ingresatupregunta" >
 
-    <div class="ingresatupregunta" id="agregando-preg">
-        <div class="agrega-ya">Agrega tu pregunta</div>
-        <br>
-        <textarea class="deja-tu-pregunta" name="agrega-tu-pregunta" id="agregarPregunta" cols="100" rows="0"
-            placeholder="escribe tu pregunta"></textarea>
-        <br>
-        <button id="recepcion-preg" class="enviarcomentario">enviar</button>
-    </div>
+            <div><input type="text" id="titlepregunta" class="agrega-ya" placeholder="nombre">
+            </div>
+            <div><textarea class="deja-tu-pregunta" name="agrega-tu-pregunta" id="agregarPregunta" cols="100" rows="0"
+                placeholder="escribe tu respuesta"></textarea>
+            </div>
+            <br>
+            <button id="recepcion-preg" class="enviarcomentario">enviar</button>
+        </div>
+    </form>
 
 
     <img src="">
 
-
+ 
     <br><br><br>
     <footer class="fuente2">
         <a href="#" class="colorfooter">Juegos</a>

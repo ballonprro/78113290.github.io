@@ -10,11 +10,12 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap" rel="stylesheet">
     <a href="../paginasJS/iniciar.js"></a>
+    <script src="/paginasJS/Autenticar.js"></script>
 </head>
 <body>
     <header class="fuente1">
         <nav>
-            <a href="/Paginas/Pagina Iniciar.html" class="iniciarsesion"><span>Iniciar Sesion</span> <i class="icon ion-md-person"></i></a>
+            <a id="login" href="/Paginas/Pagina Iniciar.html" class="iniciarsesion"><span>Iniciar Sesion</span> <i class="icon ion-md-person"></i></a>
             <img class="logoec" src="/Imagenes/ESPORTSCERTUS.png" alt="Logo-esportscertus">
             <ul>
                 <li><a href="/index.html">INICIO</a></li>
@@ -38,6 +39,9 @@
         <div>
             <a href="/Paginas/Pagina de Registro.html" class="boton boton2">Registrarse</a>
         </div>
+        <div>
+            <a class="boton boton2"  onclick="cerrar()">Cerrar Sesion</a>
+        </div>
         <h6 class="letrero">Redes Sociales</h6>
         <div>
             <ul>
@@ -53,5 +57,38 @@
         <h3 class="contacto1">Contacto e-sports@certus.edu.pe</h3>
         <h3 class="contacto1">© 2021 78113290.github.io. Todos los Derechos Reservados.</h3>
     </footer>
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDHIZjHE1Ta91S9y0KE8UlK0dAuYi0HnVo",
+    authDomain: "e-sports-certus.firebaseapp.com",
+    projectId: "e-sports-certus",
+    storageBucket: "e-sports-certus.appspot.com",
+    messagingSenderId: "167675707661",
+    appId: "1:167675707661:web:850b6a438bcd4d5f85b044"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script>
+    firebase.auth().onAuthStateChanged((user) => {
+if (user) {
+var uid = user.uid;
+document.getElementById("login").innerHTML = "Hola" + user.email;
+} 
+else {
+document.getElementById("login").innerHTML = "No logueado" + user.email;
+}
+});
+</script>
+
 </body>
 </html>

@@ -10,17 +10,15 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap" rel="stylesheet">
+    <script src="/paginasJS/alerta.js"></script>
     <title>NOTICIAS</title>
 </head>
 
 <body>
     <header class="fuente1">
         <nav>
-            <a href="/Paginas/Pagina Iniciar.html" class="iniciarsesion"><span>Iniciar Sesion</span> <i
+            <a id="login" href="/Paginas/Pagina Iniciar.html" class="iniciarsesion"><span>Iniciar Sesion</span> <i
                     class="icon ion-md-person"></i></a>
-            <a href="/Paginas/Preguntas y respuestas/configuracion de cuenta.html" class="configuracion">configuracion
-            </a>
-            <br>
 
             <img class="logoec" src="/Imagenes/ESPORTSCERTUS.png" alt="Logo-esportscertus">
             <ul>
@@ -34,7 +32,7 @@
                     </ul>
                 </li>
                 <li><a href="/Paginas/Pagina de Noticias.html">NOTICIAS</a></li>
-                <li><a href="/Paginas/Preguntas y respuestas/preguntas y respuestas.html">PREGUNTAS FRECUENTES</a></li>
+                <li><a href="./Pagina de Preguntas Frecuentes.html">PREGUNTAS FRECUENTES</a></li>
             </ul>
         </nav>
     </header>
@@ -148,6 +146,7 @@
                 <a href="" class="leer-mas">Leer mas...</a> &nbsp; &nbsp;
                 <span class="num-comentarios"> 30 comentarios</span>
             </article>
+            
 
             <div id="paginacion">
                 <p>Anteriores Publicaciones &nbsp; &nbsp; <a href="" class="enlace-paginacion">siguientes publicaciones</a></p>
@@ -155,16 +154,23 @@
         </section>
         
 
-        <section id="sidebar"></section>
+        <section id="sidebar">
+            <section id= "buscar">
+                <h2 class="encabezado-sidebar">Buscar</h2>
+                <form>
+                    <input type="text" name="buscar" placeholder="buscar">
+                    <button class="boton">OK</button>
+                </form>
+                <section id="links">
+                    <h2 class="encabezado-sidebar">Descargar los juegos mencionados</h2>
+                    <a href="https://signup.euw.leagueoflegends.com/es/signup/redownload?page_referrer=index" class="enlace-sidebar">league of legends</a>
+                    <a href="https://store.steampowered.com/about/" class="enlace-sidebar">Counter strike</a>
+                    <a href="https://store.steampowered.com/app/570/Dota_2/" class="enlace-sidebar">DOTA 2</a> 
+                </section>
+            </section>
+        </section>
     </section>
 
-    <h2 class="juegos">
-        <small>Paguinas directas para descargar los juegos mencionados </small>
-    </h2>
-    <a href="https://signup.euw.leagueoflegends.com/es/signup/redownload?page_referrer=index" class="juego1">LEAGUE OF
-        LEGENDS</a>
-    <a href="https://store.steampowered.com/about/" class="juego2">COUNTER STRIKE</a>
-    <a href="https://store.steampowered.com/app/570/Dota_2/" class="juego3">DOTA 2</a>
 
     <footer class="fuente2">
         <a href="#" class="colorfooter">Juegos</a>
@@ -173,9 +179,43 @@
         <h3 class="contacto1">Contacto e-sports@certus.edu.pe</h3>
         <h3 class="contacto1">© 2021 78113290.github.io. Todos los Derechos Reservados.</h3>
     </footer>
+
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDHIZjHE1Ta91S9y0KE8UlK0dAuYi0HnVo",
+    authDomain: "e-sports-certus.firebaseapp.com",
+    projectId: "e-sports-certus",
+    storageBucket: "e-sports-certus.appspot.com",
+    messagingSenderId: "167675707661",
+    appId: "1:167675707661:web:850b6a438bcd4d5f85b044"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script>
+    firebase.auth().onAuthStateChanged((user) => {
+if (user) {
+var uid = user.uid;
+document.getElementById("login").innerHTML = "Hola" + user.email;
+} 
+else {
+document.getElementById("login").innerHTML = "No logueado" + user.email;
+}
+});
+</script>
+
     <script>
-        window.alert("Ojala te guste nuestras noticias");
-        window.alert("Espero tengas un buen día")
+        alert("Ojala te guste nuestras noticias");
+        alert("Espero tengas un buen día")
     </script>
 </body>
 
