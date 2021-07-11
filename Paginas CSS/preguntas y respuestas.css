@@ -108,7 +108,7 @@ h3{
    
 }
 .noPresenciar{
-    display: none; 
+    /* display: none;  */
     border: 2px solid rgb(3, 16, 19);
     /* display: block; */
     background:  rgb(28, 128, 146);
