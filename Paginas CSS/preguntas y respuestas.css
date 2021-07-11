@@ -39,10 +39,14 @@ h3{
 } */
 .cuenta_robada{
     background: antiquewhite;
+    padding: 7px;
+    border: 2px solid black;
 
 }
 .center_question_help{
     background: antiquewhite;
+    padding: 7px;
+    border: 2px solid black;
 
 }
 
@@ -87,6 +91,38 @@ h3{
 .enviarcomentario{
     width: 40%;
 }
+.imprime2-texto{
+    background-color: aliceblue;
+    margin: 70px;
+    padding: 10PX;
+    border: 2px solid black;
+}
+.deja-tu-pregunta{
+    border: 1px solid white;
+    padding: 10px;
+    
+}
+#agregarPregunta{
+   
+    display: none;
+   
+}
+.noPresenciar{
+    /* display: none;  */
+    border: 2px solid rgb(3, 16, 19);
+    /* display: block; */
+    background:  rgb(28, 128, 146);
+    width: 1200px;
+    color: whitesmoke;
+    padding: 10px;
+    margin: 70px;
+    
+    
+}
+
+    
+
+
 
 
 
