@@ -15,7 +15,7 @@
 <body>
     <header class="fuente1">
         <nav>
-            <a href="/Paginas/Pagina Iniciar.html" class="iniciarsesion"><span>Iniciar Sesion</span> <i class="icon ion-md-person"></i></a>
+            <a id="login" href="/Paginas/Pagina Iniciar.html" class="iniciarsesion"><span>Iniciar Sesion</span> <i class="icon ion-md-person"></i></a>
             <img class="logoec" src="/Imagenes/ESPORTSCERTUS.png" alt="Logo-esportscertus">
             <ul>
                 <li><a href="/index.html">INICIO</a></li>
@@ -57,7 +57,7 @@
         <h3 class="contacto1">Contacto e-sports@certus.edu.pe</h3>
         <h3 class="contacto1">© 2021 78113290.github.io. Todos los Derechos Reservados.</h3>
     </footer>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
 
@@ -77,5 +77,18 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
+
+<script>
+    firebase.auth().onAuthStateChanged((user) => {
+if (user) {
+var uid = user.uid;
+document.getElementById("login").innerHTML = "Hola" + user.email;
+} 
+else {
+document.getElementById("login").innerHTML = "No logueado" + user.email;
+}
+});
+</script>
+
 </body>
 </html>
