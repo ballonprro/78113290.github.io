@@ -31,5 +31,14 @@ function iniciar() {
       var errorMessage = error.message;
       alert(errorMessage)
     });
+}
 
+function cerrar(){
+  firebase.auth().signOut()
+  .then(function(){
+    alert("Vuelve pronto"); 
+  })
+  .catch(function(error) {
+    console,log("error");
+  })
 }

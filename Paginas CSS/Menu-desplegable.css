@@ -151,6 +151,12 @@ div{
     right: 0px;
     left: 1480px;   
 }
+.deja-tu-comentario{
+    position: relative;
+    bottom: -10px;
+    right: 0px;
+    left: 1600px; 
+}
 /* .bienvenido
 {
     

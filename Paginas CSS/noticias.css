@@ -15,69 +15,7 @@ body{
     font-family: 'Orbitron', sans-serif;
     position: relative;
 }
-.juegos{
-    display: block;
-    border:solid grey;
-    width: 500px;
-    height: 85px;
-    text-align: center;
-    padding-top: 55px;
-    color: rgb(12, 194, 82);
-    background-color: rgba(6, 65, 32, 0.288);
-    font-family: 'Orbitron', sans-serif;
-    position: relative;
-    bottom: 220px;
-    right: 0px;
-    left: 1290px;
-}
-.juego1{
-    text-decoration: none;
-    display: block;
-    border:solid grey;
-    width: 200px;
-    height: 45px;
-    text-align: center;
-    padding-top: 17px;
-    color: white;
-    background-color: rgba(3, 58, 49, 0.288);
-    font-family: 'Orbitron', sans-serif;
-    position: relative;
-    bottom: 100px;
-    right: 0px;
-    left: 1150px;
-}
-.juego2{
-    text-decoration: none;
-    display: block;
-    border:solid grey;
-    width: 200px;
-    height: 35px;
-    text-align: center;
-    padding-top: 15px;
-    color: white;
-    background-color: rgba(3, 58, 49, 0.288);
-    font-family: 'Orbitron', sans-serif;
-    position: relative;
-    bottom: 160px;
-    right: 10px;
-    left: 1390px;
-}
-.juego3{
-    text-decoration: none;
-    display: block;
-    border:solid grey;
-    width: 200px;
-    height: 35px;
-    text-align: center;
-    padding-top: 15px;
-    color: white;
-    background-color: rgba(3, 58, 49, 0.288);
-    font-family: 'Orbitron', sans-serif;
-    position: relative;
-    bottom: 213px;
-    right: 5px;
-    left: 1620px;
-}
+
 .LOGO{
     position: relative;
     bottom: 1280px;
@@ -89,14 +27,15 @@ body{
 #principal{
     width:80%;
     height: auto; overflow: hidden;
-    border: 1px solid;
+    border: 0px solid;
     margin: 10px auto;
 }
 #publicaciones{
     width: 50%;
     height: auto; overflow: hidden;
-    border: 1px solid red;
+    border: 0px solid red;
     margin-top: 10px ;
+    float: left;
 }
 .post{
     width: 96%;
@@ -169,4 +108,56 @@ font-family: 'calibri light';
 }
 #publicaciones .enlace-paginacion:hover{
     text-decoration: underline;
+}
+#sidebar {
+    float: right;
+    width: 28%;
+    border: 0px solid;
+    height: auto; overflow: hidden;
+
+}
+#buscar, #links{
+    border-radius: 10px;
+    width: 98%;
+    border: 1px solid #ccc;
+    height: auto; overflow: hidden;
+    margin-bottom: 20px;
+
+}
+form{
+    margin-top: 10px;
+}
+#buscar input[type="text"]{
+    border: 1px soli #ccc;
+    box-shadow: 0px 0px 5px #ccc inset;
+    padding: 10px 30px;
+    border-radius: 10px;
+    width: 75%;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+#buscar .boton{
+    border: 0px;
+    color: white;
+    background: #0b4c5f;
+    padding: 10px;
+    border-radius: 10px;
+}
+.encabezado-sidebar{
+    width: 100%;
+    height: 35px;
+    background:#082726;
+    text-align: center;
+    color:white;
+}
+.enlace-sidebar{
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 5px;
+    color: #a0e667;
+}
+.enlace-sidebar:hover{
+    background: #0b3b39;
 }
