@@ -9,7 +9,7 @@ function guradarPregunta(preguntas, esportRespuesta1) {
             preguntaUsuario: preguntas,
             respuestaEsport: esportRespuesta1
         }
-    )
+    ) 
 }
 
 var recibirRepuesta = document.getElementById("respuestaEsport");
