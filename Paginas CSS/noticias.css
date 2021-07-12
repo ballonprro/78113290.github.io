@@ -229,3 +229,13 @@ form{
     top: 310px;
     left: 600px;
 }
+.imagen-animada{
+    border-radius: 20px;
+    height: 500px;
+    width: 500px;
+    max-width: 1000px;
+    max-height: 1300px;
+    position: absolute;
+    top: 1000px;
+    left: 1300px;
+}
