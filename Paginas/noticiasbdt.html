@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>datos noticias E-Sports Certus</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css" integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">
+
+    <script src="/paginasJS/alerta.js"></script>
+    <title>NOTICIAS</title>
+</head>
+<body>
+    <a href="/index.html" ></i> Volver a inicio</a> 
+    <div class="container">
+        <div class="row">
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <form id="task-form">
+                            <div class="form-group">
+                            <input type="text" id="task-title" class="form-control" placeholder="Titulo">            
+                            </div>
+                            <div class="form-group">
+                            <textarea id="task-description" rows="3" class="form-control" placeholder="noticias"></textarea>
+                            </div>
+                            <button class="btn btn-primary" id="btn-task-form">
+                                Enviar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div id="task-container" class="col-md-6">
+                    
+                </div>
+        </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDHIZjHE1Ta91S9y0KE8UlK0dAuYi0HnVo",
+    authDomain: "e-sports-certus.firebaseapp.com",
+    databaseURL: "https://e-sports-certus-default-rtdb.firebaseio.com",
+    projectId: "e-sports-certus",
+    storageBucket: "e-sports-certus.appspot.com",
+    messagingSenderId: "167675707661",
+    appId: "1:167675707661:web:850b6a438bcd4d5f85b044"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="/paginasJS/noticias.js"></script>
+
+</body>
+</html>
