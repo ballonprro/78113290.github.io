@@ -23,7 +23,7 @@ body{
     left: 1260px;
     border:solid teal;
 }
-/*_____________Contenido Principal___________*/
+/* _____________Contenido Principal___________
 #principal{
     width:80%;
     height: auto; overflow: hidden;
@@ -108,7 +108,7 @@ font-family: 'calibri light';
 }
 #publicaciones .enlace-paginacion:hover{
     text-decoration: underline;
-}
+} */
 #sidebar {
     float: right;
     width: 28%;
@@ -135,13 +135,17 @@ form{
     width: 75%;
     margin-left: 10px;
     margin-bottom: 30px;
+    display:block;
 }
 #buscar .boton{
-    border: 0px;
+    border: 10px;
     color: white;
     background: #0b4c5f;
     padding: 10px;
     border-radius: 10px;
+    position: absolute;
+    top: 293px;
+    right: 75px;
 }
 .encabezado-sidebar{
     width: 100%;
@@ -181,6 +185,8 @@ form{
     position: absolute;
     top:1850px;
     left: 600px;
+    margin-bottom: 10px;
+    margin-left: 25px;
 
 }
 .noticia2{

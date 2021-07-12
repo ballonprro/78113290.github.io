@@ -157,8 +157,8 @@
             <section id= "buscar">
                 <h2 class="encabezado-sidebar">Buscar</h2>
                 <form>
-                    <input type="text" name="buscar" placeholder="buscar">
-                    <button class="boton">OK</button>
+                    <input type="text" name="buscar" placeholder="¿Buscas Algo?">
+                    <button  class="boton">OK</a></button>
                 </form>
                 <section id="links">
                     <h2 class="encabezado-sidebar">Descargar los juegos mencionados</h2>
@@ -196,6 +196,7 @@
 
             <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
@@ -216,16 +217,16 @@
 </script>
 
 <script>
-    firebase.auth().onAuthStateChanged((user) => {
-if (user) {
-var uid = user.uid;
-document.getElementById("login").innerHTML = "Hola" + user.email;
-} 
-else {
-document.getElementById("login").innerHTML = "No logueado" + user.email;
-}
-});
-</script>
+        firebase.auth().onAuthStateChanged((user) => {
+            if (user) {
+                var uid = user.uid;
+                document.getElementById("login").innerHTML = "Hola" + user.email;
+            }
+            else {
+                document.getElementById("login").innerHTML = "No logueado" + user.email;
+            }
+        });
+    </script>
 
     <script>
         alert("Ojala te guste nuestras noticias");
