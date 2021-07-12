@@ -1,0 +1,1 @@
+const baseDeDatos = firebase.firestore()
