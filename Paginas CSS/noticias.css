@@ -236,6 +236,51 @@ form{
     max-width: 1000px;
     max-height: 1300px;
     position: absolute;
-    top: 1000px;
+    top: 1200px;
     left: 1300px;
+}
+.dota-2{
+    border-radius: 20px;
+    height: 500px;
+    width: 500px;
+    max-width: 1000px;
+    max-height: 1300px;
+    position: absolute;
+    top: 570px;
+    left: 1300px;
+}
+.Lol{
+    border-radius: 20px;
+    height: 500px;
+    width: 500px;
+    max-width: 1000px;
+    max-height: 1300px;
+    position: absolute;
+    top: 1900px;
+    left: 1300px;
+}
+.imagen1{
+    position: absolute;
+    color: rgb(0, 255, 76);
+    top: 1700px;
+    left: 1360px;
+    font-family:"Fredoka One";
+    font-size: 50pt;}
+.imagen2{
+    position: absolute;
+    color: rgb(0, 255, 76);
+    top: 2420px;
+    left: 1300px;
+    font-family:"Fredoka One";
+    font-size: 50pt;
+}
+.imagen3{
+    position: absolute;
+    color: rgb(0, 255, 76);
+    top: 1080px;
+    left: 1460px;
+    font-family:"Fredoka One";
+    max-width: 1000px;
+    max-height: 1300px;
+    font-size: 60pt;
 }
