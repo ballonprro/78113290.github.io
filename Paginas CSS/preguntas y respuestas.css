@@ -85,11 +85,13 @@ h3{
 .agrega-ya{
     border: 1px solid rgb(224, 214, 214);
     background: rgb(225, 226, 226);
-    width: 40%;
+    width: 60%;
     font-size: 150%;
+
 }
 .enviarcomentario{
-    width: 40%;
+    width: 30%;
+    
 }
 .imprime2-texto{
     background-color: aliceblue;
@@ -108,7 +110,7 @@ h3{
    
 }
 .noPresenciar{
-    /* display: none;  */
+    display: none; 
     border: 2px solid rgb(3, 16, 19);
     /* display: block; */
     background:  rgb(28, 128, 146);
