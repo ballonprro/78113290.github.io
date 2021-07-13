@@ -30,9 +30,8 @@ window.addEventListener("DOMContentLoaded", async (e) => {
         repuestaAleatoria.innerHTML = ``;
 
         coleccpreguntas3.forEach(doc => {
-            respuestasAleatoria.innerHTML = respuestasAleatoria.innerHTML + `<div id="paraCulminar" class="imprime-texto"><h3
-             class="imprime2-texto">` 
-            + doc.data().preguntaUsuario + `</h3><p id="respuestaEsport" class="noPresenciar">`+ doc.data().esportRespuesta1 +`</p>
+            respuestasAleatoria.innerHTML = respuestasAleatoria.innerHTML+`<div id="paraCulminar" class="imprime-texto"><h3
+             class="imprime2-texto">`+doc.data().preguntaUsuario+`<div></h3><p id="respuestaEsport" class="noPresenciar">`+doc.data().respuestaEsport+`</div></p>
             </div>`
 
         })
