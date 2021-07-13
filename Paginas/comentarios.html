@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,55 +9,75 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>Comentarios E-Sports Certus</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css" integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css"
+        integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1 class="comentario">Dejanos tus comentarios<i class='bx bx-message-alt-error bx-flip-horizontal bx-burst' style='color:#51c4d3'  ></i></h1>
-    <a href="/index.html" class="comentario2"><i class='bx bx-arrow-back bx-fade-left' style='color:#51c4d3' ></i> Volver a inicio</a> 
+    <h1 class="comentario">Dejanos tus comentarios<i class='bx bx-message-alt-error bx-flip-horizontal bx-burst'
+            style='color:#51c4d3'></i></h1>
+    <a href="/index.html" class="comentario2"><i class='bx bx-arrow-back bx-fade-left' style='color:#51c4d3'></i> Volver
+        a inicio</a>
     <div class="container">
         <div class="row">
-                <div class="col-md-6">
-                    <div class="card-body">
-                        <form id="task-form">
-                            <div class="form-group">
-                            <input type="text" id="task-title" class="form-control" placeholder="Nombre">            
-                            </div>
-                            <div class="form-group">
-                            <textarea id="task-description" rows="3" class="form-control" placeholder="Comentario"></textarea>
-                            </div>
-                            <button class="btn btn-primary" id="btn-task-form">
-                                Enviar
-                            </button>
-                        </form>
-                    </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <form id="task-form">
+                        <div class="form-group">
+                            <textarea id="task-title" class="form-control" cols="60" rows="1"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="task-description" rows="3" class="form-control"
+                                placeholder="Comentario"></textarea>
+                        </div>
+                        <button class="btn btn-primary" id="btn-task-form">
+                            Enviar
+                        </button>
+                    </form>
                 </div>
-                <div id="task-container" class="col-md-6">
-                    
-                </div>
+            </div>
+            <div id="task-container" class="col-md-6">
+
+            </div>
         </div>
     </div>
     <div><img src="/Imagenes/ESPORTSCERTUS.png" alt="" width="600" height="200" class="sport"></div>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+    <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDHIZjHE1Ta91S9y0KE8UlK0dAuYi0HnVo",
-    authDomain: "e-sports-certus.firebaseapp.com",
-    databaseURL: "https://e-sports-certus-default-rtdb.firebaseio.com",
-    projectId: "e-sports-certus",
-    storageBucket: "e-sports-certus.appspot.com",
-    messagingSenderId: "167675707661",
-    appId: "1:167675707661:web:850b6a438bcd4d5f85b044"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
-<script src="/paginasJS/comentarios.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDHIZjHE1Ta91S9y0KE8UlK0dAuYi0HnVo",
+            authDomain: "e-sports-certus.firebaseapp.com",
+            databaseURL: "https://e-sports-certus-default-rtdb.firebaseio.com",
+            projectId: "e-sports-certus",
+            storageBucket: "e-sports-certus.appspot.com",
+            messagingSenderId: "167675707661",
+            appId: "1:167675707661:web:850b6a438bcd4d5f85b044"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="/paginasJS/comentarios.js"></script>
+
+    <script>
+        firebase.auth().onAuthStateChanged((user) => {
+            if (user) {
+                var uid = user.uid;
+                document.getElementById("task-title").innerHTML = user.email;
+            }
+            else {
+                document.getElementById("task-title").innerHTML = "Anonimo"
+            }
+        });
+    </script>
+
 </body>
+
 </html>
