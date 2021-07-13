@@ -34,3 +34,4 @@ taskForm.addEventListener("submit",
         console.log(comNombre,comComentario);
     }
 )
+//colocar nombre de usuario de inmediato//
