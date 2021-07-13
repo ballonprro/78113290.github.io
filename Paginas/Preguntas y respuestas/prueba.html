@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Paginas CSS/prueba.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/litera/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>datos noticias E-Sports Certus</title>
@@ -16,7 +17,6 @@
 <body>
     <header class="fuente1">
         <nav>
-            <a href="/Paginas/Pagina Iniciar.html" class="iniciarsesion"><span>Iniciar Sesion</span> <i class="icon ion-md-person"></i></a>
             <img class="logoec" src="/Imagenes/ESPORTSCERTUS.png" alt="Logo-esportscertus">
             <ul>
                 <li><a href="/index.html">INICIO</a></li>
@@ -33,14 +33,18 @@
             </ul>
         </nav>
         </header>
+        <div class="firts">
+            <label class="btn btn-label">
+                <input type="file" id="archivo" name="archivo" class="d-none">
+                <img src="/Imagenes/Sb1 (1).jpg" alt="descargar">
+            </label>
+        </div>
+        <div class="conteiner">
+            <div id="imagenes-firebase">
+
+            </div>
+        </div>
    
-
-
-
-
-
-
-
 
     <footer class="fuente2">
         <a href="#" class="colorfooter">Juegos</a>
@@ -51,7 +55,9 @@
     </footer>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storaje.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
