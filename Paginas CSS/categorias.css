@@ -36,3 +36,7 @@ p{
     height: 100px;
     margin-left: 700px ;
 }
+.d-none
+{
+    display: none;
+ }
