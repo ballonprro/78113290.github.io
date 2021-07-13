@@ -8,6 +8,7 @@ function guradarPregunta(preguntas, esportRespuesta1) {
         {
             preguntaUsuario: preguntas,
             respuestaEsport: esportRespuesta1
+            
         }
     ) 
 }
@@ -41,7 +42,7 @@ window.addEventListener("DOMContentLoaded", async (e) => {
 })
 
 newPregunta.addEventListener("submit",
-    async (e) => {
+    async(e) => {
         e.preventDefault();
         const preguntas1 = newPregunta['titlepregunta'].value;
         const esportRespuesta = newPregunta['agregarPregunta'].value;

@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shrt icon" type="Image/x-icon" href="/Imagenes/ESPORTSCERTUS.png">
-    <link rel="stylesheet" href="/Paginas CSS/Menu-desplegable.css">
+    <link rel="stylesheet" href="/Paginas CSS/noticias2.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
@@ -12,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap" rel="stylesheet">
     <script src="/paginasJS/alerta.js"></script>
     <title>NOTICIAS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css" integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -49,12 +54,12 @@
     </style>
 
     <br>
-    <section id="principal">
+    <!-- <section id="principal">
         <section id="publicaciones">
             <article class="post">
                 <a href="" class="enlace-post">
                     <h2 class="titulo-post">TItulo de la noticia 1</h2>
-                </a>
+                </a>    
                 <img src="../Imagenes/Dota2.jpg" class="img-post">
                 <p>
                     <strong>Por:</strong><span class="datos-publicaciones">Eduardo Ballon</span>
@@ -68,7 +73,6 @@
                     reprehenderit explicabo qui!
                 </p>
                 <a href="" class="leer-mas">Leer mas...</a> &nbsp; &nbsp;
-                <span class="num-comentarios"> 90 comentarios</span>
             </article>
             <article class="post">
                 <a href="" class="enlace-post">
@@ -87,7 +91,7 @@
                     reprehenderit explicabo qui!
                 </p>
                 <a href="" class="leer-mas">Leer mas...</a> &nbsp; &nbsp;
-                <span class="num-comentarios"> 60 comentarios</span>
+                
             </article>
             <article class="post">
                 <a href="" class="enlace-post">
@@ -106,7 +110,7 @@
                     reprehenderit explicabo qui!
                 </p>
                 <a href="" class="leer-mas">Leer mas...</a> &nbsp; &nbsp;
-                <span class="num-comentarios"> 10 comentarios</span>
+                
             </article>
             <article class="post">
                 <a href="" class="enlace-post">
@@ -125,7 +129,7 @@
                     reprehenderit explicabo qui!
                 </p>
                 <a href="" class="leer-mas">Leer mas...</a> &nbsp; &nbsp;
-                <span class="num-comentarios"> 20 comentarios</span>
+                
             </article>
             <article class="post">
                 <a href="" class="enlace-post">
@@ -144,22 +148,17 @@
                     reprehenderit explicabo qui!
                 </p>
                 <a href="" class="leer-mas">Leer mas...</a> &nbsp; &nbsp;
-                <span class="num-comentarios"> 30 comentarios</span>
+                
             </article>
-            
-
-            <div id="paginacion">
-                <p>Anteriores Publicaciones &nbsp; &nbsp; <a href="" class="enlace-paginacion">siguientes publicaciones</a></p>
-            </div>
-        </section>
+        </section> -->
         
 
         <section id="sidebar">
             <section id= "buscar">
                 <h2 class="encabezado-sidebar">Buscar</h2>
                 <form>
-                    <input type="text" name="buscar" placeholder="buscar">
-                    <button class="boton">OK</button>
+                    <input type="text" name="buscar" placeholder="¿Buscas Algo?">
+                    <button  class="boton">OK</a></button>
                 </form>
                 <section id="links">
                     <h2 class="encabezado-sidebar">Descargar los juegos mencionados</h2>
@@ -170,7 +169,22 @@
             </section>
         </section>
     </section>
-
+    <div class="container">
+        <div class="row">
+                <div class="col-md-6">
+                        <form id="task-form">
+                        </form>
+                </div>
+                <div id="task-container" class="col-md-6">
+                    
+                </div>
+        </div>
+    </div>
+    <img class="noticia1" src="/Imagenes/noticia 1.jpg">
+    <img class="noticia2" src="/Imagenes/noricia 2.jpg">
+    <img class="noticia3" src="/Imagenes/noticia3.jpg">
+    <img class="noticia4" src="/Imagenes/noticia 4.jpg">
+    <img class="noticia5" src="/Imagenes/noticia 5.jpg">
 
     <footer class="fuente2">
         <a href="#" class="colorfooter">Juegos</a>
@@ -183,6 +197,7 @@
             <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -202,21 +217,24 @@
 </script>
 
 <script>
-    firebase.auth().onAuthStateChanged((user) => {
-if (user) {
-var uid = user.uid;
-document.getElementById("login").innerHTML = "Hola" + user.email;
-} 
-else {
-document.getElementById("login").innerHTML = "No logueado" + user.email;
-}
-});
-</script>
+        firebase.auth().onAuthStateChanged((user) => {
+            if (user) {
+                var uid = user.uid;
+                document.getElementById("login").innerHTML = "Hola" + user.email;
+            }
+            else {
+                document.getElementById("login").innerHTML = "No logueado" + user.email;
+            }
+        });
+    </script>
 
     <script>
         alert("Ojala te guste nuestras noticias");
-        alert("Espero tengas un buen día")
     </script>
+    <script>
+
+    </script>
+    <script src="/paginasJS/datosdenoticias.js"></script>
 </body>
 
 </html>
